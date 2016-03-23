@@ -18,9 +18,9 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
         adapter = new MyFlexibleAdapter();
-        adapter.setDisplayHeadersAtStartUp(true);
-
         recyclerView.setAdapter(adapter);
+
+        adapter.setDisplayHeadersAtStartUp(true);
         adapter.enableStickyHeaders(3);
 
         adapter.addHeaders();
